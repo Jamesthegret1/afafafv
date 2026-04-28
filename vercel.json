@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/api/:category/:endpoint",
+      "destination": "/api/:category/:endpoint.json"
+    },
+    {
+      "source": "/api/:endpoint",
+      "destination": "/api/:endpoint.json"
+    },
+    {
+      "source": "/dashboard",
+      "has": [
+        {
+          "type": "query",
+          "key": "_rsc"
+        }
+      ],
+      "destination": "/dashboard.rsc"
+    },
+    {
+      "source": "/proxies",
+      "has": [
+        {
+          "type": "query",
+          "key": "_rsc"
+        }
+      ],
+      "destination": "/proxies.rsc"
+    },
+    {
+      "source": "/user",
+      "has": [
+        {
+          "type": "query",
+          "key": "_rsc"
+        }
+      ],
+      "destination": "/user.rsc"
+    },
+    {
+      "source": "/withdraw",
+      "has": [
+        {
+          "type": "query",
+          "key": "_rsc"
+        }
+      ],
+      "destination": "/withdraw.rsc"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/proxies",
+      "destination": "/proxies.html"
+    },
+    {
+      "source": "/user",
+      "destination": "/user.html"
+    },
+    {
+      "source": "/withdraw",
+      "destination": "/withdraw.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).rsc",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/x-component"
+        }
+      ]
+    }
+  ]
+}
