@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:page', (req, res, next) => {
-    const pages = ['dashboard', 'proxies', 'user', 'withdraw'];
+    const pages = ['dashboard', 'proxies', 'user', 'withdraw', 'login'];
     const page = req.params.page;
     
     if (pages.includes(page)) {
