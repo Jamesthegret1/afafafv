@@ -5,11 +5,11 @@
   "rewrites": [
     {
       "source": "/api/:category/:endpoint",
-      "destination": "/api/:category/:endpoint.json"
+      "destination": "/mock_api/:category/:endpoint.json"
     },
     {
       "source": "/api/:endpoint",
-      "destination": "/api/:endpoint.json"
+      "destination": "/mock_api/:endpoint.json"
     },
     {
       "source": "/dashboard",
