@@ -19,12 +19,12 @@ const handleApi = (req, res) => {
     let filePath;
     
     if (category) {
-        filePath = path.join(__dirname, 'api', category, `${endpoint}.json`);
+        filePath = path.join(__dirname, 'mock_api', category, `${endpoint}.json`);
         if (!fs.existsSync(filePath)) {
-            filePath = path.join(__dirname, 'api', category, endpoint, 'summary.json');
+            filePath = path.join(__dirname, 'mock_api', category, endpoint, 'summary.json');
         }
     } else {
-        filePath = path.join(__dirname, 'api', `${endpoint}.json`);
+        filePath = path.join(__dirname, 'mock_api', `${endpoint}.json`);
     }
 
     if (fs.existsSync(filePath)) {
