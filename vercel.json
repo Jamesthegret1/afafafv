@@ -66,6 +66,10 @@
     {
       "source": "/withdraw",
       "destination": "/withdraw.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/login.html"
     }
   ],
   "headers": [
