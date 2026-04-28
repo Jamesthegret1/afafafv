@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | PLAYFUNRBXSHOP</title>
+    <link rel="stylesheet" href="/_next/static/css/7e7d96b1e6991756.css">
+    <link rel="stylesheet" href="/_next/static/css/35a6a0f46849ce1f.css">
+    <style>
+        :root {
+            --primary: #00A2FF;
+            --bg: #0f1011;
+            --card: #1c1e21;
+            --text: #ffffff;
+            --text-dim: #9aa0a6;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-card {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .btn-discord {
+            background: #5865F2;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-discord:hover {
+            background: #4752c4;
+            transform: translateY(-2px);
+        }
+
+        p {
+            color: var(--text-dim);
+            margin-bottom: 20px;
+        }
+
+        .back-home {
+            display: block;
+            margin-top: 20px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-home:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <a href="/" class="logo">
+            <img src="/icon/logo.png" alt="Logo">
+            PLAYFUNRBXSHOP
+        </a>
+        <h1>Welcome Back</h1>
+        <p>Login to access your dashboard and start trading.</p>
+        
+        <a href="/dashboard" class="btn-discord">
+            Continue to Dashboard
+        </a>
+
+        <a href="/" class="back-home">← Back to Homepage</a>
+    </div>
+</body>
+</html>
